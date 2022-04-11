@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+
+#mobile-menu.active {
+    left: 0;
+}
+
 .marquee {
     animation: marquee 30s linear infinite;
     -webkit-animation: marquee 30s linear infinite;
