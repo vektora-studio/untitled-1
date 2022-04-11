@@ -1,14 +1,19 @@
 const mobileBtn = document.querySelector(".mobile-btn");
 const navMenu = document.querySelector("#mobile-menu");
+const link = document.querySelectorAll(".link");
+console.log(link)
 
 mobileBtn.addEventListener("click", () => {
     navMenu.classList.toggle("active");
-    console.log('p')
 });
 
-// function mobileMenu() {
-//     // mobileBtn.classList.toggle("active");
-// }
+link.forEach(n => (
+    n.addEventListener("click", closeMenu))
+)
+
+function closeMenu() {
+    navMenu.classList.remove('active')
+}
 
 // const navLink = document.querySelectorAll(".nav-link");
 // const btnNavbar = document.querySelector('.btn-navbar')
